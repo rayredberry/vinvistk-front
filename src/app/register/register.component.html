@@ -1,0 +1,20 @@
+<form #logInForm=ngForm (ngSubmit)="onSubmit()">
+  <div class="container">
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required [(ngModel)]="form.name">
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required [(ngModel)]="form.email">
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required [(ngModel)]="form.password">
+
+    <label for="password-confirm"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Password" name="password_confirmation" required [(ngModel)]="form.password_confirmation">
+
+    <button type="submit">Register</button>
+  </div>
+  <small>
+      <a routerLink="/login">Already have an account? Login</a>
+  </small>
+</form>

@@ -1,0 +1,68 @@
+h1 {
+  color: red;
+  padding: 5rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.phone-form,
+.code-form,
+.user-form {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  flex-direction: column;
+  flex-flow: wrap;
+
+  form {
+      width: 100%;
+      padding: 0 10%;
+  }
+
+  input {
+    width: 100%;
+    display: block;
+    margin: 2rem 0;
+    font-size: inherit;
+  }
+
+  button {
+    width: 100%;
+    margin: 2rem 0;
+    color: white;
+    font-size: inherit;
+    background: red;
+    cursor: pointer;
+  }
+
+  label {
+    color: red;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  &.user-form {
+    min-width: 700px;
+
+    input {
+      margin: 1rem;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 700px){
+
+}

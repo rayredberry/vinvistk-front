@@ -1,0 +1,17 @@
+<form #logInForm=ngForm (ngSubmit)="onSubmit()">
+  <div class="container">
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required [(ngModel)]="form.email">
+
+     <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required [(ngModel)]="form.password">
+
+     <button type="submit">Login</button>
+  </div>
+  <small>
+      <a routerLink="/request-reset">Reset Password</a>
+  </small>
+  <br>
+  <button (click)="facebookLogin()" >Login with Facebook</button>
+  <button (click)="signinWithGoogle()" >Sign in with Google</button>
+</form>

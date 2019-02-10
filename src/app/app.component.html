@@ -1,0 +1,12 @@
+<main>
+	<header>
+		<nav>
+			<a routerLink="/">Home</a>
+			<a *ngIf=!loggedIn routerLink="/register">Register</a>
+			<a *ngIf=!loggedIn routerLink="/login">Login</a>
+			<a *ngIf=loggedIn href="#" (click)="logout($event)">Logout</a>
+		</nav>
+	</header>
+
+	<router-outlet></router-outlet>
+</main>
